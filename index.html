@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de Bases</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"> </script>
+</head>
+
+<body>
+        <div id="div_main">
+
+                <h1>Conversor de bases MT</h1>
+                
+                <h3>Infome um número e sua base</h3>
+
+                <input id="ipt_numero" type="text" placeholder="Digite o valor">
+
+                <select id="slt_bases">
+                        <option value="16">16</option>
+                        <option value="10">10</option>
+                        <option value="8">8</option>
+                        <option value="2">2</option>
+                </select>
+                <h3>CONVERTER PARA:</h3>
+
+                <!--Decimal-->
+                <input onclick="aparecer_decimal()" type="checkbox"><b>Decimal</b>
+                <br>
+                <div id="div_decimal" class="resultados"></div>
+                <br>
+
+                <!--Octal-->
+                <input onclick="aparecer_octal()" type="checkbox"><b>Octal</b>
+                <br>
+                <div id="div_octal" class="resultados"></div>
+                <br>
+
+                <!--Hexa-->
+                <input onclick="aparecer_hexa()" type="checkbox"><b>Hexadecimal</b>
+                <br>
+                <div id="div_hexa" class="resultados"></div>
+                <br>
+
+                <!--Binario-->
+                <input onclick="aparecer_bin()" type="checkbox"><b>Binário</b>
+                <br>
+                <div id="div_bin" class="resultados"></div>
+                <br>
+
+                <button onclick="converter()" class="btn">Converter</button> <br> <br>
+
+                <a href="calculadora/indexCalc.html"><button class="btn" id="btn_calc"> Calculadora de Bases </button></a>
+        </div>
+
+
+
+</body>
+
+</html>
